@@ -1,4 +1,5 @@
 # Cross-Lingual Contextual Embedding Space Mapping
+![sense-level](https://github.com/fe1ixxu/Contextual_Mapping/blob/main/figures/sense-level.png)
 
 ## Prerequisites
 First install the virtual environmemt including required packages.
@@ -50,6 +51,8 @@ Continuing the above example, we run `getwordvectorsfrombert.py` to obtain align
 path=YOUR/PATH/FOR/PARALLEL/CORPUS
 python getwordvectorsfrombert.py --src en --tgt de --open_src_file ${path}en_token.txt  --open_tgt_file ${path}de_token.txt  --open_align_file ${path}forward_align.txt --write_vectors_path ${path}vectors/ --max_num_word 10000 --batch_size 256 --max_seq_length 150
 ```
+
+![vectors](https://github.com/fe1ixxu/Contextual_Mapping/blob/main/figures/vectors.jpg)
 
 ### 4. Cluster aligned Embeddings
 
