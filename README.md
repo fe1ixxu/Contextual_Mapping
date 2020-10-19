@@ -1,5 +1,6 @@
 # Cross-Lingual Contextual Embedding Space Mapping
 ![sense-level](https://github.com/fe1ixxu/Contextual_Mapping/blob/main/figures/sense-level.png)
+Example: sense-level mapping: 'bank' is split into two sense embeddings, which are respectively mapped to German 'bank' (financial establishment) and 'ufer' (shore). Similar discussion also applies to the word 'hard', where its two sense vectors are mapped to German 'schwer' (difficult) and 'hart' (solid).
 
 ## Prerequisites
 First install the virtual environmemt including required packages.
