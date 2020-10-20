@@ -36,7 +36,7 @@ Please install the [fast align](https://github.com/clab/fast_align) toolkit by f
 
 ### 2. Download and Preprocess Parallel Corpora
 
-Parallel Corpora are downloaded from [ParaCrawl](https://www.paracrawl.eu/). A preprocessed file is already prepared for you and you can easily run it by one command. An example of downloading and preprocessing En-De parallel corpora:
+Parallel Corpora are downloaded from [ParaCrawl](https://www.paracrawl.eu/). A preprocessing file is already prepared for you and you can easily run it by one command. An example of downloading and preprocessing En-De parallel corpora:
 ```
 wget https://s3.amazonaws.com/web-language-models/paracrawl/release6/en-de.txt.gz
 gunzip ./en-de.txt.gz
