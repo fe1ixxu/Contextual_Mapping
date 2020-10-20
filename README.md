@@ -38,7 +38,7 @@ Please install the [fast align](https://github.com/clab/fast_align) toolkit by f
 
 Parallel Corpora are downloaded from [ParaCrawl](https://www.paracrawl.eu/). A preprocessed file is already prepared for you and you can easily run it by one command. An example of downloading and preprocessing En-De parallel corpora:
 ```
-wget https://s3.amazonaws.com/web-language-models/paracrawl/release5.1/en-de.txt.gz
+wget https://s3.amazonaws.com/web-language-models/paracrawl/release6/en-de.txt.gz
 gunzip ./en-de.txt.gz
 ./data/preprocess.sh de YOUR/PATH/FOR/PARALLEL/CORPUS YOUR/PATH/FOR/FAST/ALIGN
 ```
