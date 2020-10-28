@@ -19,7 +19,7 @@ with open(file_name) as f:
 		with open(write_name2, "w") as f3:
 			line = f.readline()
 
-			while(line and i<1000000):
+			while(line and i<500000):
 				L = line.split('\t')
 				length = len(L[0])
 				if pre_word != length and len(L[0].split())<150:
