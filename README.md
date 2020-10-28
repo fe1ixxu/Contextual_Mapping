@@ -71,8 +71,8 @@ The output contextual aligned embeddings file includes 5 columns. They respectiv
 ```
 0 - source word (sense)
 1 - translated word (sense) in the target side
-2 - occurance of the source word
-3 - entropy of the cluster (didn't use for this paper)
+2 - occurance of the source word (didn't use in this paper)
+3 - entropy of the cluster (didn't use in this paper)
 4 - source word (sense) embedding
 5 - target word (sense) embedding
 ```
