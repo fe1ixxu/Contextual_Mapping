@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Bilingual Dictionary Induction
 An example of evaluating English-German mapping through BDI. The results of isotropy, isometry and isomorphism will also print out.
 ```
-python mapping --tgt de --emb_path $EMB/PATH --if_iter_norm True
+python mapping.py --tgt de --emb_path $EMB/PATH --if_iter_norm True
 ```
 
 ## To Create Your Own Aligned Embeddings:
