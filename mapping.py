@@ -10,7 +10,7 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--tgt", type=str, default = "de")
-    parser.add_argument("--emb_path", type=str, default="/export/c12/haoranxu/test_vectors/aligned/")
+    parser.add_argument("--emb_path", type=str, default="en-de_word_vectors/aligned/")
     parser.add_argument("--dict_path", type=str, default = "./data/dict/")
     parser.add_argument("--vocab_path", type=str, default = "./data/vocab/")
     parser.add_argument("--random_num_d", type=int, default = 1000) # number of randomly selected vectors for isotropy and isometry 
