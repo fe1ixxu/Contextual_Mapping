@@ -35,33 +35,15 @@ def find_pound_key(tokens, i, index):
         return find_pound_key(tokens, i+1, index)
 
 def get_tokenizer(language):
-    assert language in ["en", "de", "fi", "ar", "it", "el", "nl", "es", "pl", "ro","sv", "pt", "bg"]
+    assert language in ["en", "de", "ar", "nl"]
     if language == "en":
         tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     elif language == "de":
         tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-german-uncased")
-    elif language == "fi":
-        tokenizer = BertTokenizer.from_pretrained("TurkuNLP/bert-base-finnish-uncased-v1")
     elif language == "ar":
         tokenizer = AutoTokenizer.from_pretrained("asafaya/bert-base-arabic")
-    elif language == "it":
-        tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-italian-uncased")
-    elif language == "el":
-        tokenizer = AutoTokenizer.from_pretrained("nlpaueb/bert-base-greek-uncased-v1")
     elif language == "nl":
         tokenizer = BertTokenizer.from_pretrained("wietsedv/bert-base-dutch-cased")
-    elif language == "es":
-        tokenizer = BertTokenizer.from_pretrained("dccuchile/bert-base-spanish-wwm-uncased")
-    elif language == "pl":
-        tokenizer = AutoTokenizer.from_pretrained("dkleczek/bert-base-polish-uncased-v1")
-    elif language == "ro":
-        tokenizer = AutoTokenizer.from_pretrained("dumitrescustefan/bert-base-romanian-uncased-v1", do_lower_case=True)
-    elif language == "sv":
-        tokenizer = AutoTokenizer.from_pretrained("af-ai-center/bert-base-swedish-uncased")
-    elif language == "pt":
-        tokenizer = AutoTokenizer.from_pretrained("neuralmind/bert-base-portuguese-cased", do_lower_case=True)
-    elif language == "bg":
-        tokenizer = AutoTokenizer.from_pretrained("anon-submission-mk/bert-base-macedonian-bulgarian-cased", do_lower_case=True)
 
     return tokenizer
 
@@ -69,7 +51,7 @@ tokenizer_src = get_tokenizer(args.src)
 tokenizer_tgt = get_tokenizer(args.tgt)
 
 print("start tokenizing src..... at", args.write_src_file)
-num = 1000000
+num = 500000
 i=0
 with open(args.src_file) as f: #"./en.txt"
     with open(args.write_src_file, "w") as f2:   #"./en_token.txt"
